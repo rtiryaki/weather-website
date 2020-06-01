@@ -14,12 +14,17 @@ const forecast = (location, callback) => {
     } else {
       callback(
         undefined,
-        body.current.weather_descriptions[0] +
-          ". it is currently " +
+        "The weather is " +
+          body.current.weather_descriptions[0] +
+          ". It is currently " +
           body.current.temperature +
           " degrees outside. There is a " +
           body.current.precip +
-          " % chance of rain"
+          " % chance of rain. It feels like " +
+          body.current.feelslike +
+          " degrees and wind speed will be " +
+          body.current.wind_speed +
+          "."
       );
     }
   });
