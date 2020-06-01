@@ -67,3 +67,7 @@ header {
 p {
   font-size: x-large;
 }
+
+.about-p {
+  color: blueviolet;
+}
